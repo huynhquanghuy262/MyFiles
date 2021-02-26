@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="Shift_JIS"?>
+<ManualProperty>
+    <Config>
+        <Template Dir="$(PROJECT_DIR)/../../../99_Tools/template/en"></Template>
+        <OutputFile Dir="$(PROJECT_DIR)/../output_for_Android" Name="RCG3AHFWN0203ZDPE.pdf"></OutputFile>
+        <ConcatPDF Name="ConcatPDF.exe"></ConcatPDF>
+    </Config>
+    <CustomPropertyList>
+        <CustomProperty Name="ReleaseYear"      Value="2019"         ></CustomProperty>
+        <CustomProperty Name="ReleaseMonth"     Value="May"           ></CustomProperty>
+        <CustomProperty Name="ReleaseDay"       Value="24"           ></CustomProperty>
+        <CustomProperty Name="Release"          Value="$(ReleaseMonth). $(ReleaseDay), $(ReleaseYear)"></CustomProperty>
+        <CustomProperty Name="DocumentType"     Value="User's Manual"></CustomProperty>
+        <CustomProperty Name="ProductNumber"    Value="$(Subject)"></CustomProperty>
+        <CustomProperty Name="DocumentNumber"   Value="$(Subject)J"></CustomProperty>
+        <CustomProperty Name="DocumentNumberEN" Value="$(Subject)E"></CustomProperty>
+        <CustomProperty Name="APIName"          Value="ADSP Interface"></CustomProperty>
+        <CustomProperty Name="DRVName"          Value="ADSP Driver"></CustomProperty>
+        <CustomProperty Name="FWKName"          Value="ADSP Framework"></CustomProperty>
+        <CustomProperty Name="ADSPPlugin"       Value="ADSP Plugin"></CustomProperty>
+        <CustomProperty Name="Revision"         Value="Rev. 1.00"></CustomProperty>
+        <CustomProperty Name="ManualTitle1"     Value=""></CustomProperty>
+        <CustomProperty Name="ManualTitle2"     Value="$(Title)"></CustomProperty>
+        <CustomProperty Name="Appendix"         Value="$(Software) Manual"></CustomProperty>
+        <CustomProperty Name="Software"         Value="Software"></CustomProperty>
+    </CustomPropertyList>
+    <BuiltinPropertyList>
+        <BuiltinProperty Name="Title"    Value="ADSP Framework"></BuiltinProperty>
+        <BuiltinProperty Name="Subject"  Value="RCG3AHFWN0203ZDP"></BuiltinProperty>
+        <BuiltinProperty Name="Author"   Value=""></BuiltinProperty>
+        <BuiltinProperty Name="Company"  Value="Renesas Electronics Corporation"></BuiltinProperty>
+        <BuiltinProperty Name="Category" Value=""></BuiltinProperty>
+        <BuiltinProperty Name="Keywords" Value=""></BuiltinProperty>
+        <BuiltinProperty Name="Comments" Value=""></BuiltinProperty>
+    </BuiltinPropertyList>
+    <FileList>
+        <File Dir="$(TEMPLATE_DIR)" Name="00_Template_top.doc"           PropertyApply="true"></File>
+        <File Dir="$(TEMPLATE_DIR)" Name="01_Template_caution.pdf"       PropertyApply="false"></File>
+        <File Dir="$(TEMPLATE_DIR)" Name="02_Template_trademark_E_for_Android.doc"     PropertyApply="false"></File>
+        <File Dir="$(PROJECT_DIR)"  Name="03_Usage.docx"                 PropertyApply="true"></File>
+        <File Dir="$(PROJECT_DIR)"  Name="04_Body.docx"                  PropertyApply="true"></File>
+        <File Dir="$(PROJECT_DIR)"  Name="08_History_for_Android.docx"   PropertyApply="true"></File>
+        <File Dir="$(TEMPLATE_DIR)" Name="09_Template_colophon.doc"      PropertyApply="true"></File>
+        <File Dir="$(TEMPLATE_DIR)" Name="10_Template_inquiries.pdf"     PropertyApply="false"></File>
+        <File Dir="$(TEMPLATE_DIR)" Name="10_Template_inquiries_jp.pdf"  PropertyApply="false"></File>
+        <File Dir="$(TEMPLATE_DIR)" Name="11_Template_back.doc"          PropertyApply="true"></File>
+    </FileList>
+</ManualProperty>

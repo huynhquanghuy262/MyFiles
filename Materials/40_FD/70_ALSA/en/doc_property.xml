@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="Shift_JIS"?>
+<ManualProperty>
+    <Config>
+        <Template Dir="$(PROJECT_DIR)/../../../99_Tools/template/en"></Template>
+        <OutputFile Dir="$(PROJECT_DIR)/../output" Name="RCG3AHPDL4101ZDOE_AN_ALSAIF.pdf"></OutputFile>
+        <ConcatPDF Name="ConcatPDF.exe"></ConcatPDF>
+    </Config>
+    <CustomPropertyList>
+        <CustomProperty Name="ReleaseYear"      Value="2018"         ></CustomProperty>
+        <CustomProperty Name="ReleaseMonth"     Value="Dec"           ></CustomProperty>
+        <CustomProperty Name="ReleaseDay"       Value="25"           ></CustomProperty>
+        <CustomProperty Name="Release"          Value="$(ReleaseMonth) $(ReleaseDay), $(ReleaseYear)"></CustomProperty>
+        <CustomProperty Name="DocumentType"     Value="Application Note - ALSA -"></CustomProperty>
+        <CustomProperty Name="ProductNumber"    Value="$(Subject)"></CustomProperty>
+        <CustomProperty Name="DocumentNumber"   Value="$(Subject)J"></CustomProperty>
+        <CustomProperty Name="DocumentNumberEN" Value="$(Subject)E_AN_ALSAIF"></CustomProperty>
+        <CustomProperty Name="APIName"          Value="ADSP Interface for Linux"></CustomProperty>
+        <CustomProperty Name="DRVName"          Value="ADSP Driver for Linux"></CustomProperty>
+        <CustomProperty Name="FWKName"          Value="ADSP Framework"></CustomProperty>
+        <CustomProperty Name="ADSPPlugin"       Value="ADSP Plugin"></CustomProperty>
+        <CustomProperty Name="Revision"         Value="Rev. 2.00"></CustomProperty>
+        <CustomProperty Name="ManualTitle1"     Value=""></CustomProperty>
+        <CustomProperty Name="ManualTitle2"     Value="$(Title)"></CustomProperty>
+        <CustomProperty Name="Appendix"         Value=""></CustomProperty>
+        <CustomProperty Name="Software"         Value="Software"></CustomProperty>
+    </CustomPropertyList>
+    <BuiltinPropertyList>
+        <BuiltinProperty Name="Title"    Value="ADSP Driver for Linux"></BuiltinProperty>
+        <BuiltinProperty Name="Subject"  Value="RCG3AHPDL4101ZDO"></BuiltinProperty>
+        <BuiltinProperty Name="Author"   Value=""></BuiltinProperty>
+        <BuiltinProperty Name="Company"  Value="Renesas Electronics Corporation"></BuiltinProperty>
+        <BuiltinProperty Name="Category" Value=""></BuiltinProperty>
+        <BuiltinProperty Name="Keywords" Value=""></BuiltinProperty>
+        <BuiltinProperty Name="Comments" Value=""></BuiltinProperty>
+    </BuiltinPropertyList>
+    <FileList>
+        <File Dir="$(TEMPLATE_DIR)" Name="00_Template_AN_top.doc"          PropertyApply="true"></File>
+        <File Dir="$(TEMPLATE_DIR)" Name="01_Template_caution.pdf"         PropertyApply="false"></File>
+        <File Dir="$(TEMPLATE_DIR)" Name="02_Template_trademark_E.doc"     PropertyApply="false"></File>
+        <File Dir="$(PROJECT_DIR)"  Name="03_Usage.docx"                   PropertyApply="true"></File>
+        <File Dir="$(PROJECT_DIR)"  Name="04_Body.docx"                    PropertyApply="true"></File>
+        <File Dir="$(PROJECT_DIR)"  Name="08_History.docx"                 PropertyApply="true"></File>
+        <File Dir="$(TEMPLATE_DIR)" Name="09_Template_colophon.doc"        PropertyApply="true"></File>
+        <File Dir="$(TEMPLATE_DIR)" Name="10_Template_inquiries.pdf"       PropertyApply="false"></File>
+        <File Dir="$(TEMPLATE_DIR)" Name="10_Template_inquiries_jp.pdf"    PropertyApply="false"></File>
+        <File Dir="$(TEMPLATE_DIR)" Name="11_Template_back.doc"            PropertyApply="true"></File>
+    </FileList>
+</ManualProperty>
