@@ -1,0 +1,52 @@
+Below steps are defined to help new members understand basicly about ADSP system in short time
+    - Understand basic communication flow between layers: ADSP driver, framework and plugins
+    - Sequence flow of each functions called from user to data processed in HW for the function
+    
+1. Fist of all: please read Audio_Framework_Specification.pdf to have whole image of the audio framework and each of its components as well as to explain the communication between them.
+
+2. Answer to below questions: 
+    - What is ADSP and purpose of it? 
+    
+    - Which functions of ADSP? 
+    
+    - List of use case ADSP?
+        Read ADSP ALSA UM List of Usage section
+    
+    - Which component of ADSP system and it's function?
+    
+    - What is ALSA? 
+        https://www.alsa-project.org
+        
+    - Which is basic work flow of audio application use ALSA interface 
+        https://www.alsa-project.org/alsa-doc/alsa-lib/examples.html
+        
+    - Which APIs of ADSP ALSA driver maps with API of ALSA framework 
+        Check User Manual of ADSP ALSA driver and understand purpose of these APIs
+        
+    - How ALSA framework playback or record a stream through ADSP ALSA driver
+        Check User Manual of ADSP ALSA driver (sequence flow section)
+        
+    - Which is detail of above APIs 
+        Check source code
+        
+    - Which APIs of Renderer/Capture plugin maps with command message called in APIs of ADSP ALSA (Focus on these plugins first and focus on mapping between ADSP ALSA driver and Renderer/Capture plugins. It is easy to catch up workflow quickly)
+        Firstly read ADSP Framework's UM to know mean of each command message, purpose
+        
+    - Which is detail of above APIs?
+        Check soure code
+    
+    - How data processed in Renderer/Capture plugin(command processed, memory, buffer, format of data depend on PCM width)?
+        Renderer: From get buffer from ADSP memory to transfer to SSI
+        Capture: From SSI to ADSP memory
+        
+    - Which is HW modules related to audio: SSI, SCU, ADG, ADMAC, ADMACpp and FIFO? Purpose of it?
+        Read overview of Renderer/Capture UM to know modules, read HW UM to know function of these modules
+        
+    - Which is operation of these HW modules (check soure code, focus on SSI, ADG first)?
+        Read source code to know operation
+
+
+
+
+
+
