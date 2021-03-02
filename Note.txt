@@ -1,0 +1,4 @@
+https://blogd.net/linux/quan-ly-phan-vung-dia-cung-tren-linux/
+http://www.linux-commands-examples.com/mkfs.vfat
+
+https://github.com/android-rpi
